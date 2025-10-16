@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
                    { nome: 'Feira do Empredorismo', data: '2025-11-29',},
                  { nome: 'Feira de Matheus Ganem ', data: '2025-11-11 ', descricao: 'Alunos dos 3⁰ Ano de Informática.' },
                  { nome: 'Feira de Matheus Ganem', data: '2025-11-12', descricao: 'Alunos dos 2⁰ de Informática. ' },
-                  { nome: 'Espotec', data: '2025-12-05',
-                 { nome: 'Jornada Pedagógica', data: '2025-02-03',
+                  { nome: 'Espotec', data: '2025-12-05'},
+                 { nome: 'Jornada Pedagógica', data: '2025-02-03'},
                  { nome: 'Projeto Artísticos Culturais', data: '2025-06-02',descricao: 'Primeiras Semanas.' },
                   { nome: 'Projetos Artísticos Culturais', data: '2025-07-01', descricao: 'Continuação Dos Projetos Artísticos culturais.' },
                   { nome: 'Projetoa Artísticos Culturais', data: '2025-08-04', descricao: 'Continuação Dos Projetos artísticos culturais.' },
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    { nome: 'Inicio Das aulas', data: '2025-02-10', descricao: 'Inicio Das aulas .' },
                    { nome: 'Interclasse', data: '2025-06-16', descricao: 'Inicio dos Jogos.' },
                  { nome: ' Interclasse', data: '2025-06-18', descricao: ' Continuação Dos Jogos ' },
-                  { nome: 'Setembro Amarelo', data: '2025-09-01', descricao: 'Projeto Da Área Da Saude e Projeto Da Área De Linguagem .' }  ];
+                  { nome: 'Setembro Amarelo', data: '2025-09-01', descricao: 'Projeto Da Área Da Saude e Projeto Da Área De Linguagem .' }];
 
     // --- SELEÇÃO DOS ELEMENTOS DO HTML ---
     const meses = document.querySelectorAll('.mes');
@@ -109,3 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
