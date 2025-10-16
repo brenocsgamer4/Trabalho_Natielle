@@ -5,7 +5,6 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    /* Adiciona rolagem suave */
     scroll-behavior: smooth;
 }
 
@@ -45,9 +44,7 @@ body {
     background-color: white;
     width: 100%;
     max-width: 380px;
-
     padding: 30px 15px; 
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +52,7 @@ body {
 }
 
 .icone-link:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     background-color: #f5f5f5;
 }
@@ -75,7 +72,7 @@ body {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
-
+/* --- ESTILOS GERAIS DA PÁGINA DO CALENDÁRIO --- */
 .page-container {
     width: 95%;
     max-width: 900px;
@@ -128,7 +125,6 @@ header h1, #eventos-display h2, #avisos h2 {
     border-color: #e66c8b;
 }
 
-
 #lista-eventos { margin-top: 20px; }
 .evento-item { border-bottom: 1px solid #f0f0f0; padding: 15px 5px; }
 .evento-item:last-child { border-bottom: none; }
@@ -138,11 +134,14 @@ header h1, #eventos-display h2, #avisos h2 {
 #avisos ul { margin: 0; padding-left: 20px; }
 
 
+/* ======================================================= */
+/* --- REGRAS RESPONSIVAS AJUSTADAS --- */
+/* ======================================================= */
 
 @media (max-width: 768px) {
-
+    
+    /* --- Página Inicial --- */
     .landing-container h1 {
-
         font-size: 15vw; 
         margin-bottom: 30px;
     }
@@ -153,21 +152,25 @@ header h1, #eventos-display h2, #avisos h2 {
     }
 
     .texto-botao {
-        font-size: 8vw; 
+        font-size: 8vw;
     }
 
     .subtitulo-inferior {
-        font-size: 5vw; 
+        font-size: 5vw;
     }
 
+    /* --- Página do Calendário (MUDANÇAS AQUI) --- */
     .page-container {
-        padding: 30px 15px; 
-        margin: 20px auto;
+        /* ALTERADO: Aumenta o espaçamento interno para dar mais respiro */
+        padding: 40px 20px; 
+        margin: 0; /* Remove margens externas */
         width: 100%;
-        border-radius: 0; 
+        border-radius: 0;
+        min-height: 100vh; /* Garante que o fundo ocupe a tela toda */
     }
-
-    header h1, #eventos-display h2, #avisos h2 {
-        font-size: 1.8em; 
+    
+    /* NOVO: Adiciona espaço abaixo do título "Eventos do Mês" */
+    #eventos-display {
+        margin-bottom: 40px;
     }
 }
