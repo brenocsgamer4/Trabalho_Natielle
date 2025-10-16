@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Este é o seu "banco de dados". Adicione ou edite os eventos aqui.
     // A lista de eventos DEVE estar dentro de colchetes [ ]
     const eventos = [{ nome: 'Conselho de Classe', data: '2025-12-05', descricao: 'Reunião dos professores para fechamento das notas.' },
-                   { nome: 'Feira do Empredorismo', data: '2025-11-29',},
+                   { nome: 'Feira do Empredorismo', data: '2025-11-29', descricao: ''},
                  { nome: 'Feira de Matheus Ganem ', data: '2025-11-11 ', descricao: 'Alunos dos 3⁰ Ano de Informática.' },
                  { nome: 'Feira de Matheus Ganem', data: '2025-11-12', descricao: 'Alunos dos 2⁰ de Informática. ' },
-                  { nome: 'Espotec', data: '2025-12-05'},
-                 { nome: 'Jornada Pedagógica', data: '2025-02-03'},
-                 { nome: 'Projeto Artísticos Culturais', data: '2025-06-02',descricao: 'Primeiras Semanas.' },
+                  { nome: 'Espotec', data: '2025-12-05', descricao: ''},
+                 { nome: 'Jornada Pedagógica', data: '2025-02-03', descricao: ''},
+                 { nome: 'Projeto Artísticos Culturais', data: '2025-06-02', descricao: 'Primeiras Semanas.' },
                   { nome: 'Projetos Artísticos Culturais', data: '2025-07-01', descricao: 'Continuação Dos Projetos Artísticos culturais.' },
                   { nome: 'Projetoa Artísticos Culturais', data: '2025-08-04', descricao: 'Continuação Dos Projetos artísticos culturais.' },
                   { nome: 'Sao João', data: '2025-06-18', descricao: 'Festa do são João, comidas Típicas e Apresentação da Quadrilha.' },
@@ -109,4 +109,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
