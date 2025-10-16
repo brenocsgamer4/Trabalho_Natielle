@@ -18,7 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         { nome: 'Inicio Das aulas', data: '2025-02-10', descricao: 'Inicio Das aulas.' },
         { nome: 'Interclasse', data: '2025-06-16', descricao: 'Inicio dos Jogos.' },
         { nome: 'Interclasse', data: '2025-06-18', descricao: 'Continuação Dos Jogos' },
-        { nome: 'Setembro Amarelo', data: '2025-09-01', descricao: 'Projeto Da Área Da Saude e Projeto Da Área De Linguagem.' }
+        { nome: 'Setembro Amarelo', data: '2025-09-01', descricao: 'Projeto Da Área Da Saude e Projeto Da Área De Linguagem.' },
+        { nome: 'Sem Eventos', data: '2025-01-06', descricao: 'Sem Eventos Escolares Nesse Mês.' },
+        { nome: 'Sem Eventos', data: '2025-03-03', descricao: 'Sem Eventos Escolares Nesse Mês.' },
+        { nome: 'Sem Eventos', data: '2025-04-07', descricao: 'Sem Eventos Escolares Nesse Mês .' },
+        { nome: 'Sem Eventos', data: '2025-05-05', descricao: 'Sem Eventos Escolares Nesse Mês .' },
+        { nome: 'Sem Evntos ', data: '2025-10-06', descricao: 'Sem Eventos Escolares Nesse Mês .' },
     ];
 
     // --- SELEÇÃO DOS ELEMENTOS DO HTML ---
@@ -112,3 +117,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
