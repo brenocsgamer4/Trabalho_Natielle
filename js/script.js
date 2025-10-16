@@ -35,13 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const eventosDoMes = eventos
           .filter(evento => {
-                const dataDoEvento = new Date(evento.data);
-                // getMonth() retorna 0-11, por isso somamos 1.
-                return dataDoEvento.getMonth() + 1 === mesInt;
+                // CORREÇÃO 1: Usamos .trim() para remover espaços extras da string da data.
+                // CORREÇÃO 2: Usamos .getUTCMonth() para evitar problemas com fuso horário.
+                const dataDoEvento = new Date(evento.data.trim());
+                return dataDoEvento.getUTCMonth() + 1 === mesInt;
             })
           .sort((a, b) => {
                 // Ordena os eventos pela data
-                return new Date(a.data) - new Date(b.data);
+                return new Date(a.data.trim()) - new Date(b.data.trim());
             });
 
         renderizarEventos(eventosDoMes);
@@ -70,8 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
             nomeH3.textContent = evento.nome;
 
             const dataP = document.createElement('p');
-            // Formata a data para um formato amigável (DD/MM/YYYY)
-            const dataObj = new Date(evento.data);
+            
+            // CORREÇÃO: Usamos .trim() aqui também para consistência.
+            const dataObj = new Date(evento.data.trim());
             const dia = String(dataObj.getUTCDate()).padStart(2, '0');
             const mes = String(dataObj.getUTCMonth() + 1).padStart(2, '0');
             const ano = dataObj.getUTCFullYear();
@@ -90,24 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- EVENT LISTENERS (OUVINTES DE EVENTOS) ---
 
-    // Adiciona um 'ouvinte de clique' para cada um dos meses
     meses.forEach(mes => {
         mes.addEventListener('click', (event) => {
-            // Remove a classe 'ativo' de todos os meses
             meses.forEach(m => m.classList.remove('ativo'));
-
-            // Adiciona a classe 'ativo' apenas ao mês que foi clicado
             const mesClicado = event.currentTarget;
             mesClicado.classList.add('ativo');
-
-            // Pega o número do mês do atributo 'data-month'
             const mesSelecionado = mesClicado.dataset.month;
-            
-            // Chama a função para exibir os eventos
             exibirEventosDoMes(mesSelecionado);
         });
     });
 
 });
-
-
