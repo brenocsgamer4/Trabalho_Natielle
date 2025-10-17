@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const eventos = [
         { nome: 'Conselho de Classe', data: '2025-12-05', descricao: 'Reunião dos professores para fechamento das notas.' },
         { nome: 'Feira do Empredorismo', data: '2025-11-29', descricao: ''},
-        { nome: 'Feira de Matheus Ganem', data: '2025-11-11', descricao: 'Alunos dos 3⁰ Ano de Informática.' },
-        { nome: 'Feira de Matheus Ganem', data: '2025-11-12', descricao: 'Alunos dos 2⁰ de Informática.' },
+        { nome: 'Feira da T.I criativa  ', data: '2025-11-11', descricao: 'Alunos dos 3⁰ Ano de Informática.' },
+        { nome: 'Feira da T.I criativa', data: '2025-11-12', descricao: 'Alunos dos 2⁰ de Informática.' },
         { nome: 'Espotec', data: '2025-12-05', descricao: ''},
         { nome: 'Jornada Pedagógica', data: '2025-02-03', descricao: ''},
         { nome: 'Projeto Artísticos Culturais', data: '2025-06-02', descricao: 'Primeiras Semanas.' },
@@ -117,4 +117,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
